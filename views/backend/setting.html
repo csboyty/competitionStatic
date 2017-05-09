@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="webkit" name="renderer">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="keywords" content="xxxx"/>
+    <meta name="description" content="xxxx">
+    <title>阶段设置</title>
+    <base href="http://localhost/competitionStatic/">
+    <link type="text/css" rel="stylesheet" href="resources/css/lib/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="resources/css/src/main.css">
+</head>
+<body>
+
+<script src="views/backend/header.js"></script>
+
+<div class="left">
+    <script src="views/backend/menu.js"></script>
+</div>
+
+<section class="right">
+    <article class="main">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">阶段设置</h1>
+            </div>
+            <div class="panel-body" id="opt-body">
+                <form class="form-horizontal" id="myForm" action="#" method="post">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">当前阶段</label>
+                        <div class="col-md-8">
+                            <label class="control-label">作品投递</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">阶段*</label>
+                        <div class="col-md-8">
+                            <select class="form-control" name="stage">
+                                <option value="1">作品投递</option>
+                                <option value="2">评审</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-8">
+                            <button type="submit" class="btn btn-success form-control">确定</button>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <br>
+                <hr>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-2">章程</label>
+                        <div class="col-md-10" id="uploadRuleContainer">
+                            <a href="#" class="btn btn-success" id="uploadRuleBtn">
+                                <span class="glyphicon glyphicon-upload"></span> 上传
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-2">
+                            <a id="ruleLink" href="#">xxxx.pdf</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </article>
+</section>
+
+<script src="views/backend/loading.js"></script>
+
+
+<script>
+    var pageName="setting";
+</script>
+<script src="resources/js/lib/jquery-2.0.3.min.js"></script>
+<script src="resources/js/lib/bootstrap.min.js"></script>
+<script src="resources/js/lib/jquery.toastmessage.js"></script>
+<script src="resources/js/lib/jquery.validate.min.js"></script>
+<script src="resources/js/lib/plupload.full.min.js"></script>
+<script src="resources/js/lib/jquery.serialize-object.min.js"></script>
+<script src="resources/js/src/config.js"></script>
+<script src="resources/js/src/functions.js"></script>
+<script src="resources/js/src/ZYFormHandler.js"></script>
+<script src="resources/js/src/backend/setting.js"></script>
+
+</body>
+</html>

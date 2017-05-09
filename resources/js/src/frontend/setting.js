@@ -1,0 +1,30 @@
+$(document).ready(function(){
+    var zyFormHandler=new ZYFormHandler({
+        submitUrl:"#",
+        redirectUrl:"#"
+    });
+    $("#myForm").validate({
+        ignore:[],
+        rules:{
+            fullname:{
+                required:true,
+                maxlength:8
+            },
+            tel:{
+                required:true
+            }
+        },
+        messages:{
+            fullname:{
+                required:config.validErrors.required,
+                maxlength:config.validErrors.maxLength.replace("${max}",8)
+            },
+            tel:{
+                required:config.validErrors.required
+            }
+        },
+        submitHandler:function(form) {
+            zyFormHandler.submitForm(form);
+        }
+    });
+});

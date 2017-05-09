@@ -1,0 +1,15 @@
+{
+    "success":true,
+    "sEcho":1,
+    "iTotalRecords":20,
+    "iTotalDisplayRecords":20,
+    "aaData":[{
+        "id":1,
+        "email":"11111111111",
+        "fullname":"2017-09-09"
+    },{
+        "id":2,
+        "email":"222222222222",
+        "fullname":"2017-09-09"
+    }]
+}
