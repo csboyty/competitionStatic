@@ -37,7 +37,10 @@ var config={
     ajaxUrls:{
         newsGetAll:"data/json/news.json",
         newsGetByPage:"data/json/news.json",
-        newsDelete:"comment/:id/delete"
+        newsDelete:"comment/:id/delete",
+        userGetByPage:"data/json/user.json",
+        worksGetByPage:"data/json/works.json",
+        removeWork:"#"
     },
     dataTable:{
         langUrl:"resources/lang/de_DE.txt"

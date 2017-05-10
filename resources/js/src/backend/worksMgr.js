@@ -1,4 +1,4 @@
-var userMgr=(function(config,functions){
+var worksMgr=(function(config,functions){
 
     return {
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
         ownTable:function(){
             var ownTable=$("#myTable").dataTable({
                 "bServerSide": true,
-                "sAjaxSource": config.ajaxUrls.userGetByPage,
+                "sAjaxSource": config.ajaxUrls.worksGetByPage,
                 "bInfo":true,
                 "bLengthChange": false,
                 "bFilter": false,
@@ -26,8 +26,14 @@ $(document).ready(function(){
                     "sUrl":config.dataTable.langUrl
                 },
                 "aoColumns": [
-                    { "mDataProp": "fullname"},
-                    { "mDataProp": "email"},
+                    { "mDataProp": "image",
+                        "fnRender":function(oObj){
+                            return '<img class="thumb" src="'+oObj.aData.image+'">';
+                        }
+                    },
+                    { "mDataProp": "title"},
+                    { "mDataProp": "type"},
+                    { "mDataProp": "userEmail"},
                     { "mDataProp": "opt",
                         "fnRender":function(oObj){
                             return '<a href="'+oObj.aData.id+'">xxx</a>';

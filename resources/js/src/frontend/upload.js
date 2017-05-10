@@ -1,6 +1,6 @@
 var upload=(function(config,functions){
     return {
-        createUploaders:function(){
+        createUploads:function(){
             for(var i= 1;i<=3;i++){
 
                 //使用立即执行，将i作为参数传入，不然受闭包影响，i总是4
@@ -34,4 +34,6 @@ $(document).ready(function(){
         submitUrl:"#",
         redirectUrl:"#"
     });
+
+    upload.createUploads();
 });

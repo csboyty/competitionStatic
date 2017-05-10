@@ -1,4 +1,4 @@
-var create=(function(config,functions){
+var newsCreate=(function(config,functions){
     return{
 
     }
