@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="webkit" name="renderer">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="keywords" content="xxxx"/>
-    <meta name="description" content="xxxx">
-    <title>后台管理</title>
+    <meta name="keywords" content="湖南省老年服务产品设计大赛"/>
+    <meta name="description" content="湖南省老年服务产品设计大赛">
+    <title>湖南省老年服务产品设计大赛|新闻管理</title>
     <base href="http://localhost/competitionStatic/">
-    <link type="text/css" rel="stylesheet" href="resources/css/lib/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="resources/css/src/main.css">
+    <link href="resources/backend/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/lib/jquery.toastmessage.css" type="text/css" rel="stylesheet" >
+    <link href="resources/backend/css/src/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -30,27 +31,33 @@
                 <form class="form-horizontal" id="myForm" action="#" method="post">
 
                     <div class="form-group">
-                        <label class="control-label col-md-2">封面图*</label>
+                        <label class="control-label col-md-2">头像*</label>
                         <div class="col-md-10" id="uploadContainer">
                             <a href="#" class="btn btn-success" id="uploadBtn">
                                 <span class="glyphicon glyphicon-upload"></span> 上传
                             </a>
                             <p class="help-block">请上传510x330的jpg，png</p>
                             <img  id="image"  style="width:100px"
-                                  src="resources/images/app/defaultPeopleImage.jpg"/>
+                                  src="resources/backend/images/app/defaultPeopleImage.jpg"/>
                             <input type="hidden" id="imageUrl" name="image">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-md-2">名称*</label>
+                        <label class="control-label col-md-2">姓名*</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" name="name">
+                            <input type="text" class="form-control" name="title">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label  class="control-label col-md-2">介绍*</label>
+                        <label  class="control-label col-md-2">描述*</label>
                         <div class="col-md-8">
-                            <textarea class="form-control"  name="intro" rows="3" id="intro"></textarea>
+                            <textarea class="form-control"  name="intro" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="control-label col-md-2">描述*</label>
+                        <div class="col-md-8">
+                            <textarea class="form-control"  name="content" rows="3" id="content"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
@@ -68,19 +75,19 @@
 
 
 <script>
-    var pageName="news";
+    var pageName="judge";
 </script>
 
-<script src="resources/js/lib/jquery-2.0.3.min.js"></script>
-<script src="resources/js/lib/bootstrap.min.js"></script>
+<script src="resources/js/lib/jquery-1.10.2.min.js"></script>
 <script src="resources/js/lib/jquery.toastmessage.js"></script>
 <script src="resources/js/lib/plupload.full.min.js"></script>
-<script src="resources/js/lib/tinyMCE/tinymce.min.js"></script>
 <script src="resources/js/lib/jquery.validate.min.js"></script>
 <script src="resources/js/lib/jquery.serialize-object.min.js"></script>
-<script src="resources/js/src/config.js"></script>
-<script src="resources/js/src/functions.js"></script>
-<script src="resources/js/src/backend/newsCreate.js"></script>
+<script src="resources/backend/js/lib/bootstrap.min.js"></script>
+<script src="resources/backend/js/lib/tinyMCE/tinymce.min.js"></script>
+<script src="resources/backend/js/src/config.js"></script>
+<script src="resources/backend/js/src/functions.js"></script>
+<script src="resources/backend/js/src/judgeCOU.js"></script>
 
 </body>
 </html>

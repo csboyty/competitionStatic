@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta name="keywords" content="湖南省老年服务产品设计大赛"/>
     <meta name="description" content="湖南省老年服务产品设计大赛">
-    <title>湖南省老年服务产品设计大赛|阶段设置</title>
-    <base href="http://localhost/competitionStatic/">
-    <link href="resources/backend/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="resources/css/lib/jquery.toastmessage.css" type="text/css" rel="stylesheet">
+    <title>湖南省老年服务产品设计大赛|新闻管理</title>
+    <base href="http://localhost/competitionStatic/" type="text/css" rel="stylesheet">
+    <link href="resources/backend/css/lib/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/lib/jquery.toastmessage.css" rel="stylesheet" type="text/css">
     <link href="resources/backend/css/src/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -25,23 +25,39 @@
     <article class="main">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h1 class="panel-title">阶段设置</h1>
+                <h1 class="panel-title">新建/修改成果</h1>
             </div>
             <div class="panel-body" id="opt-body">
                 <form class="form-horizontal" id="myForm" action="#" method="post">
+
                     <div class="form-group">
-                        <label class="control-label col-md-2">当前阶段</label>
-                        <div class="col-md-8">
-                            <label class="control-label">作品投递</label>
+                        <label class="control-label col-md-2">封面图*</label>
+                        <div class="col-md-10" id="uploadContainer">
+                            <a href="#" class="btn btn-success" id="uploadBtn">
+                                <span class="glyphicon glyphicon-upload"></span> 上传
+                            </a>
+                            <p class="help-block">请上传510x330的jpg，png</p>
+                            <img  id="image"  style="width:100px"
+                                  src="resources/backend/images/app/defaultPeopleImage.jpg"/>
+                            <input type="hidden" id="imageUrl" name="image">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-md-2">阶段*</label>
+                        <label class="control-label col-md-2">标题*</label>
                         <div class="col-md-8">
-                            <select class="form-control" name="stage">
-                                <option value="1">作品投递</option>
-                                <option value="2">评审</option>
-                            </select>
+                            <input type="text" class="form-control" name="title">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="control-label col-md-2">摘要*</label>
+                        <div class="col-md-8">
+                            <textarea class="form-control"  name="intro" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="control-label col-md-2">内容*</label>
+                        <div class="col-md-8">
+                            <textarea class="form-control"  name="content" rows="3" id="content"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
@@ -59,17 +75,19 @@
 
 
 <script>
-    var pageName="setting";
+    var pageName="news";
 </script>
+
 <script src="resources/js/lib/jquery-1.10.2.min.js"></script>
 <script src="resources/js/lib/jquery.toastmessage.js"></script>
+<script src="resources/js/lib/plupload.full.min.js"></script>
 <script src="resources/js/lib/jquery.validate.min.js"></script>
 <script src="resources/js/lib/jquery.serialize-object.min.js"></script>
 <script src="resources/backend/js/lib/bootstrap.min.js"></script>
-<script src="resources/js/src/ZYFormHandler.js"></script>
+<script src="resources/backend/js/lib/tinyMCE/tinymce.min.js"></script>
 <script src="resources/backend/js/src/config.js"></script>
 <script src="resources/backend/js/src/functions.js"></script>
-<script src="resources/backend/js/src/setting.js"></script>
+<script src="resources/backend/js/src/newsCOU.js"></script>
 
 </body>
 </html>

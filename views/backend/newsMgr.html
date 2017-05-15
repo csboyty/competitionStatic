@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="webkit" name="renderer">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="keywords" content="xxxx"/>
-    <meta name="description" content="xxxx">
-    <title>后台管理</title>
+    <meta name="keywords" content="湖南省老年服务产品设计大赛"/>
+    <meta name="description" content="湖南省老年服务产品设计大赛">
+    <title>湖南省老年服务产品设计大赛|新闻管理</title>
     <base href="http://localhost/competitionStatic/">
 
-    <link href="resources/css/lib/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="resources/css/lib/jquery.dataTables.css" rel="stylesheet" type="text/css">
-    <link href="resources/css/lib/jquery.toastmessage.css" rel="stylesheet" type="text/css">
-    <link href="resources/css/src/main.css" rel="stylesheet" type="text/css">
+    <link href="resources/backend/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="resources/backend/css/lib/jquery.dataTables.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/lib/jquery.toastmessage.css" type="text/css" rel="stylesheet">
+    <link href="resources/backend/css/src/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
             <div class="panel-body" id="opt-body">
                 
                 <div class="row">
-                    <a class="btn btn-primary" href="views/backend/create.html">
+                    <a class="btn btn-primary" href="views/backend/newsCreate.html">
                         <span class="glyphicon glyphicon-plus"></span> 新建
                     </a>
                 <div class="input-group tableSearchContainer col-md-6">
@@ -61,55 +61,22 @@
     </div>
 </div>
 
-<!--回复-->
-<div class="modal fade" id="replyModal">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title">回复评论</h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal" id="replyForm" data-action="manager/comments/:id/reply"
-                      action="#" method="post">
-                    <div class="form-group">
-                        <label  class="control-label col-md-2">评论内容*</label>
-                        <div class="col-md-8">
-                            <p id="commentContent">评论详情评论详情评论详情评论详情评论详情评论详情</p>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label  class="control-label col-md-2">回复*</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" name="content" >
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" class="btn btn-primary" value="确定">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 <script src="views/backend/loading.js"></script>
 
 <script>
     var pageName="news";
 </script>
-<script src="resources/js/lib/jquery-2.0.3.min.js"></script>
-<script src="resources/js/lib/bootstrap.min.js"></script>
-<script src="resources/js/lib/jquery.dataTables.min.js"></script>
+<script src="resources/js/lib/jquery-1.10.2.min.js"></script>
 <script src="resources/js/lib/jquery.validate.min.js"></script>
 <script src="resources/js/lib/jquery.serialize-object.min.js"></script>
 <script src="resources/js/lib/jquery.toastmessage.js"></script>
-<script src="resources/js/src/config.js"></script>
-<script src="resources/js/src/functions.js"></script>
-<script src="resources/js/src/ZYTableHandler.js"></script>
-<script src="resources/js/src/backend/newsMgr.js"></script>
+<script src="resources/backend/js/lib/bootstrap.min.js"></script>
+<script src="resources/backend/js/lib/jquery.dataTables.min.js"></script>
+<script src="resources/backend/js/src/config.js"></script>
+<script src="resources/backend/js/src/functions.js"></script>
+<script src="resources/backend/js/src/ZYTableHandler.js"></script>
+<script src="resources/backend/js/src/newsMgr.js"></script>
 
 </body>
 </html>

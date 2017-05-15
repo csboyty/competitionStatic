@@ -105,11 +105,4 @@ $(document).ready(function(){
         }
     });
 
-    if(pageName){
-        var target=$(".item[data-page-name='"+pageName+"']");
-        if(target){
-            target.addClass("active");
-        }
-
-    }
 });

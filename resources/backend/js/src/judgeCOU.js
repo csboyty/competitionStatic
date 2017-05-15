@@ -1,4 +1,4 @@
-var newsCreate=(function(config,functions){
+var judgeCreate=(function(config,functions){
     return{
 
     }
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 
     tinymce.init({
-        selector: "#intro",
+        selector: "#content",
         height:300,
         toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
         toolbar2: 'print preview media | forecolor backcolor emoticons',
@@ -44,9 +44,9 @@ $(document).ready(function(){
         plugins : 'link image preview fullscreen table textcolor colorpicker code',
         setup: function (ed) {
             ed.on('blur', function (e) {
-                $("#intro").val(ed.getContent());
+                $("#content").val(ed.getContent());
                 if(ed.getContent()){
-                    $(".error[for='intro']").remove();
+                    $(".error[for='content']").remove();
                 }
             });
         }
@@ -61,7 +61,10 @@ $(document).ready(function(){
             intro:{
                 required:true
             },
-            name:{
+            content:{
+                required:true
+            },
+            title:{
                 required:true,
                 maxlength:32
             }
@@ -73,7 +76,10 @@ $(document).ready(function(){
             intro:{
                 required:config.validErrors.required
             },
-            name:{
+            content:{
+                required:config.validErrors.required
+            },
+            title:{
                 required:config.validErrors.required,
                 maxlength:config.validErrors.maxLength.replace("${max}",32)
             }
