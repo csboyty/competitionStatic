@@ -40,6 +40,7 @@ var config={
         newsDelete:"comment/:id/delete",
         userGetByPage:"data/json/user.json",
         worksGetByPage:"data/json/works.json",
+        workGetById:"#",
         removeWork:"#"
     },
     dataTable:{

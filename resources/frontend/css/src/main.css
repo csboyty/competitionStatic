@@ -1,0 +1,359 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "Arail","Microsoft YaHei","Heiti";
+    max-width: 1920px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+.zyBtn{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: #20c7be;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+.zyBGF4F4F4{
+    background: #f4f4f4!important;
+}
+.zyFooter{
+    height: 80px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+}
+/***************************header***********************/
+.zyHeader{
+    background: #f4f4f4;
+    height: 50px;
+    position: relative;
+}
+.zyMenu{
+    margin-left:32px;
+    height: 100%;
+    font-size: 0px;
+}
+.zyMenu .zyItem{
+
+}
+.zyMenu .zyItem .zyLink{
+    font-size: 14px;
+    display: block;
+    width: 80px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.zyMenu .zyItem .zyLink:hover,.zyMenu .zyItem .zyLink.zyActive{
+    color: #fff;
+    background: #20c7be;
+}
+.zyUserMenu{
+    position: absolute;
+    right: 60px;
+    top:0px;
+    height: 100%;
+}
+.zyUserMenu .zyItem{
+
+}
+.zyUserMenu .zyItem .zyLink{
+    cursor: pointer;
+    font-size: 0px;
+    display: block;
+}
+.zyUserMenu .zyItem .zyLink.zyIconUser{
+    width: 19px;
+    height: 21px;
+    background: url(../../images/app/iconUser.png) no-repeat;
+    background-size: cover;
+}
+
+/***************************首页顶部大图**********************/
+.zyTopShow{
+
+}
+.zyTopShow .zyItem{
+    position: relative;
+}
+.zyTopShow .zyItem img{
+    width: 100%;
+    height: auto;
+}
+.zyTopShow .zyItem .zyInfo{
+    position: absolute;
+    width: 400px;
+    bottom:150px;
+    right:80px;
+    color: #fff;
+}
+.zyTopShow .zyItem .zyTitle{
+    font-size: 28px;
+    margin: 0px;
+}
+.zyTopShow .zyItem .zyExcerpt{
+    margin: 30px 0px 50px 0px;
+    font-size: 14px;
+}
+/**************************lists**************************/
+/**
+*首页新闻，3个item一行
+*/
+.zyList{
+    font-size: 0px;
+    padding: 50px;
+}
+.zyList .zyItem{
+    width: 31%;
+    margin: 1.1%;
+}
+.zyList .zyItem .zyThumb{
+
+}
+.zyList .zyItem .zyTitle{
+    margin: 20px 0px 10px 0px;
+    font-size: 18px;
+    color: #6d6d6d;
+}
+.zyList .zyItem .zyDate{
+    color: #6d6d6d;
+    font-size: 14px;
+}
+/**
+*新闻页列表
+*/
+.zyList1{
+    margin: 60px 50px 60px 50px;
+}
+.zyList1 .zyItem{
+    border-top:1px solid #6d6d6d;
+    padding: 20px 0px;
+    display: block;
+}
+.zyList1 .zyItem:first-child{
+    border: none;
+}
+.zyList1 .zyItem .zyDate{
+    font-size: 18px;
+    color: #6d6d6d;
+}
+.zyList1 .zyItem .zyTitle{
+    margin: 25px 0px 20px 0px;
+    font-size: 21px;
+    color: #6d6d6d;
+}
+.zyList1 .zyItem .zyExcerpt{
+    font-size: 14px;
+    color: #6d6d6d;
+    margin: 0px;
+}
+/**
+*评委
+*/
+.zyList2{
+    font-size: 0px;
+    margin: 60px 5% 60px 5%;
+}
+.zyList2 .zyItem{
+    width: 45%;
+    margin: 2.5%;
+    position: relative;
+}
+.zyList2 .zyItem .zyThumb{
+    width: 40%;
+}
+.zyList2 .zyItem .zyInfo{
+    position: absolute;
+    left:45%;
+    top:0px;
+    bottom:0px;
+    right: 0px;
+    overflow: hidden;
+}
+.zyList2 .zyItem .zyTitle{
+    font-size: 21px;
+    color: #000;
+    margin: 0px;
+}
+.zyList2 .zyItem .zyCountry{
+    margin: 10px 0px;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+.zyList2 .zyItem .zyExcerpt{
+    font-size: 14px;
+    color: #6d6d6d;
+    margin: 0px;
+}
+.zyJudgeDetail{
+    margin: 60px;
+    font-size: 0px;
+}
+.zyJudgeDetail .zyInfo{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-right: 6%;
+}
+.zyJudgeDetail .zyInfo .zyThumb{
+
+}
+.zyJudgeDetail .zyInfo .zyTitle{
+    font-size: 18px;
+    margin: 20px 0px;
+    color: #6d6d6d;
+    font-weight: normal;
+}
+.zyJudgeDetail .zyInfo .zySubTitle{
+    font-size: 14px;
+    color: #6d6d6d;
+    font-weight: normal;
+    margin: 0px;
+}
+.zyJudgeDetail .zyDetail{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 60%;
+}
+.zyJudgeDetail .zyDetail .zyTip{
+    color: #20c7be;
+    font-size: 16px;
+}
+.zyJudgeDetail .zyDetail p{
+    text-indent: 2em;
+}
+
+
+/*********************************************章程*****************************/
+.zyRuleDetail{
+    margin: 60px 0px;
+}
+.zyRuleDetail .zySection{
+    padding: 40px 30% 40px 60px;
+}
+.zyRuleDetail .zyTitle{
+
+}
+.zyRuleDetail .zyTitle .zyNum{
+    font-size: 45px;
+    color: #000;
+    vertical-align: top;
+    line-height: 45px;
+    margin-right: 20px;
+}
+.zyRuleDetail .zyTitle .zyText{
+    font-size: 24px;
+    position: relative;
+}
+.zyRuleDetail .zyTitle .zyText:before{
+    content: "";
+    position: absolute;
+    bottom:-10px;
+    left:0px;
+    width: 50px;
+    border-bottom: 2px solid #20c7be;
+}
+.zyRuleDetail .zyContent{
+    margin-left:80px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.zyRuleDetail .zyContent .zySubTitle{
+    border-left:2px solid #20c7be;
+    color: #20c7be;
+    font-weight: bold;
+    padding-left: 30px;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+.zyRuleDetail .zyContent .zySubTitle+.zyText{
+    padding-left: 30px;
+}
+.zyRuleTip{
+    position: fixed;
+    right: 60px;
+    top:100px;
+    border-left:1px solid #6d6d6d;
+    padding: 30px 0px;
+}
+.zyRuleTip .zyItem{
+    display: block;
+    list-style: square;
+    margin: 20px 0px;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.zyRuleTip .zyItem:before{
+    content: "";
+    border:1px solid #6d6d6d;
+    background: #fff;
+    border-radius: 20px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left:-6.5px;
+    top:5px;
+}
+.zyRuleTip .zyItem .zyLink{
+    color: #6d6d6d;
+}
+.zyRuleTip .zyItem.zyActive .zyLink{
+    color: #20c7be;
+}
+.zyRuleTip .zyItem.zyActive:before{
+    border:1px solid #20c7be;
+}
+
+
+/*********************************覆写分页控件样式*******************************/
+#kkpager{
+    font-size: 14px;
+}
+#kkpager>div{
+    text-align: center;
+}
+#kkpager .pageBtnWrap{
+    display: inline-block;
+    margin: 30px auto;
+    float: none;
+}
+#kkpager span.curr{
+    border: none;
+    color: #20c7be;
+    background: none;
+}
+#kkpager a{
+    border: none;
+    color: #6d6d6d;
+}
+#kkpager span.disabled{
+    border: none;
+}
+#kkpager a:hover{
+    background: none;
+    color: #20c7be;
+    border: none;
+}
+
